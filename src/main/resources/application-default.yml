@@ -1,0 +1,19 @@
+spring:
+  security:
+    user:
+      name: user
+      password: password
+      roles: ACTUATOR
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging.level:
+  org.springframework.security: TRACE
+  org.springframework.cloud.gateway: TRACE
